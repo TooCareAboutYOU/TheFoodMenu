@@ -1,0 +1,81 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragPage_classfiy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="#F0F0F0"
+	    android:layout_gravity="center_horizontal" >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="48sp"
+	        android:orientation="horizontal"
+	        android:background="#ffffff"
+	        android:gravity="center">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="分类"
+	            android:layout_gravity="center"
+	            android:textColor="#ff0000"
+	            android:textSize="18sp"/>
+	    </LinearLayout>
+		<TextView android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="#cdcdcd"/>
+	      
+	      <LinearLayout 
+	        android:id="@+id/Tag_of_net_on"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:visibility="gone" >
+	         <ListView 
+	            android:id="@+id/mainClassify_listview"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="3dp"
+	            android:scrollbars="none"
+	            android:divider="#00000000"
+	            android:dividerHeight="0dip"
+	            android:background="#ffffff"/>
+	          <TextView android:layout_width="0.5dp" android:layout_height="fill_parent" android:background="#cdcdcd"/>
+		         <!-- 菜系分类 -->
+		         <ScrollView 
+		             android:layout_width="0dp"
+		             android:layout_weight="1"
+		             android:layout_height="fill_parent"
+		             android:scrollbars="none">
+		             <LinearLayout 
+			             android:layout_width="match_parent"
+			             android:layout_height="fill_parent"
+			             android:orientation="vertical">
+			             <com.zhang.utils.ScorllViewGridViewUtils 
+					       android:id="@+id/frag01_gv_view"
+					       android:layout_width="match_parent"
+					       android:layout_height="fill_parent"
+					       android:numColumns="3"
+					       android:columnWidth="110dp"
+					       android:layout_marginLeft="3dp"
+					       android:layout_marginTop="5dp"
+					       android:horizontalSpacing="5dp"
+					       android:verticalSpacing="5dp" />
+		         </LinearLayout>
+	         </ScrollView>
+	         
+	    </LinearLayout>
+	      <ImageView 
+		    android:id="@+id/Tag_of_net_off"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/icon_un_net"
+		    android:scaleType="fitXY"/>
+	      
+	<TextView android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="#cdcdcd"/>
+	
+	</LinearLayout>
+
+</LinearLayout>

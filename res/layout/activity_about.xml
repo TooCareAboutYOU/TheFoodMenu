@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_gravity="center_horizontal" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#2F5A8C" >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView 
+                android:id="@+id/return_of_about"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/iconfont_top_jiantou"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="15dp"
+	            android:onClick="BtnOnClick" />
+		    <TextView 
+		        android:layout_centerInParent="true"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="关于我们"
+		        android:textColor="@color/txt_white"
+		        android:textSize="24sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dp" >
+        <ImageView 
+	        android:id="@+id/about_appLogo"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_marginTop="5dp"
+	        android:src="@drawable/ic_launcher"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="让吃更美好"
+            android:textColor="#696969"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+        <!-- 版本号 -->
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="V"
+	            android:textColor="#696969"
+	            android:textSize="16sp"/>
+            <TextView 
+                android:id="@+id/version_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0.0.0"
+	            android:textColor="#696969"
+	            android:textSize="16sp"/>
+        </LinearLayout>
+        <!-- 分割线 -->
+        <TextView 
+            android:layout_width="match_parent" 
+            android:layout_height="1dp" 
+            android:background="#696969"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+       
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+            <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/aboout_sina_Email"
+	            android:textColor="#000000"
+	            android:textSize="16sp"
+	            android:autoLink="web"
+	            android:background="@drawable/radius_top_and_bottom_color"
+	            android:padding="5dp"
+	            android:layout_marginBottom="10dp"/>
+        	 <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/aboout_sina_phoneURL"
+	            android:textColor="#000000"
+	            android:textSize="16sp"
+	            android:autoLink="web"
+	            android:background="@drawable/radius_top_and_bottom_color"
+	            android:padding="5dp"
+	            android:layout_marginBottom="15dp"/>
+            <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/aboout_sina_web"
+	            android:textColor="#000000"
+	            android:textSize="16sp"
+	            android:autoLink="web"
+	            android:background="@drawable/radius_top_and_bottom_color"
+	            android:padding="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center_horizontal"
+       android:layout_marginBottom="20dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+       <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="湖南长沙菜鸟科技有限公司  版权所有"
+	        android:textColor="#696969"
+	        android:textSize="14sp"/>
+       <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=" @ 1994-2015 美食"
+	        android:textColor="#696969"
+	        android:textSize="14sp"/>
+   </LinearLayout>
+    
+    
+</LinearLayout>

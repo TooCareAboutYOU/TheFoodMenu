@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!--选中 -->
+    <item android:state_checked="true" android:color="@color/main_txt_on" />
+    <!-- 56ABE4 -->
+    <!--未选中等状态 -->
+    <item android:color="@color/main_txt_off"  />
+     <!-- ACBABA -->
+</selector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#ffffff"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+    
+    <com.loopj.android.image.SmartImageView 
+       android:id="@+id/step_menu_img"
+       android:layout_width="170dp"
+       android:layout_height="150dp"
+       android:scaleType="fitXY"
+       android:layout_gravity="center"
+       android:src="@drawable/classify_gridview_fangshi"/>
+
+    <TextView 
+        android:id="@+id/steps_step"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:text="斯蒂芬斯分行U盾冯家湾和斯蒂芬 私服北风微风"/>
+
+    <TextView
+        android:id="@+id/steps_stepNum"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.24"
+        android:text="1"
+        android:textColor="#F04A08"
+        android:textSize="20sp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold" />
+    
+</LinearLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cdcdcd" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffff" >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView 
+                android:id="@+id/return_of_care"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/iconfont_top_jiantou"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="15dp"
+	            android:onClick="CareOnlick" />
+		    <TextView 
+		        android:layout_centerInParent="true"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="我的收藏"
+		        android:textColor="#F5B230"
+		        android:textSize="24sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="#cdcdcd"/>
+    <!-- <ListView 
+        android:id="@+id/care_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:background="#f0f0f0"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"/> -->
+    <com.zhang.utils.ListViewCompatUtils
+        android:id="@+id/listSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff4f7f9"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1.0px"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

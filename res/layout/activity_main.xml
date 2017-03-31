@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center" >
+        <RadioButton
+            android:id="@+id/rbtn_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/menuinfo"
+            android:textColor="@drawable/maintextcolor"
+            android:checked="true"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rbtn_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/classifyinfo"
+            android:textColor="@drawable/maintextcolor"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="分类" />
+        
+        <RadioButton
+            android:id="@+id/rbtn_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/userinfo"
+            android:textColor="@drawable/maintextcolor"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <!-- 详情界面 -->
+    <!-- 第二层 -->
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView 
+	        android:id="@+id/steps_scrollview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:scrollbars="none">
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            <com.loopj.android.image.SmartImageView 
+			       android:id="@+id/step_menu_albums"
+			       android:layout_width="match_parent"
+			       android:layout_height="300dp"
+			       android:scaleType="fitXY"
+			       android:layout_gravity="center"
+			       android:src="@drawable/classify_gridview_fangshi"/>
+			    <LinearLayout 
+			         android:layout_width="match_parent"
+			         android:layout_height="wrap_content"
+			         android:orientation="vertical"
+			         android:layout_margin="10dp">
+			         <TextView 
+				        android:id="@+id/step_menu_id"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="11"
+				        android:textColor="#11B006"
+				        android:textSize="24sp"
+				        android:textStyle="bold"
+				        android:visibility="gone"/>
+			         <TextView 
+				        android:id="@+id/step_menu_title"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="番茄炒蛋"
+				        android:textColor="#11B006"
+				        android:textSize="24sp"
+				        android:textStyle="bold"/>
+			         <TextView 
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="18sp"
+			             android:text="简介："/>
+			         <TextView 
+			             android:id="@+id/step_menu_tags"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="15sp"
+			             android:layout_marginLeft="5dp"/>
+			         
+			         <TextView 
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="18sp"
+			             android:text="谱主寄语："/>
+			          <TextView 
+			             android:id="@+id/step_menu_imtros"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="14sp"
+			             android:layout_marginLeft="5dp"/>
+			          
+			          <TextView 
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="18sp"
+			             android:text="食材明细："/>
+			          <TextView 
+			             android:id="@+id/step_menu_ingredients"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="13sp"
+			             android:layout_marginLeft="10dp"/>
+			          <TextView 
+			             android:id="@+id/step_menu_burden"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="14sp"
+			             android:layout_marginLeft="10dp"/>
+			          <TextView 
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="#000000"
+			             android:textSize="18sp"
+			             android:text="制作步骤："/>
+	
+				       <com.zhang.utils.ScorllViewListViewUtils
+					       android:id="@+id/step_list"
+					       android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:layout_margin="5dp"
+					       android:padding="5dp"  />
+			     </LinearLayout>
+			     
+	        </LinearLayout>
+	    </ScrollView>
+
+        <LinearLayout 
+            android:id="@+id/rup"
+	        android:layout_width="match_parent"
+	        android:layout_height="48sp"
+	        android:layout_gravity="center_horizontal" >
+	        <ImageButton 
+	            android:id="@+id/steps_return"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/iconfont_top_jiantou"
+	            android:layout_marginLeft="15dp"
+	            android:layout_gravity="center"
+	            android:background="@null"/>
+	        <TextView 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight="1"/>
+	        <TextView
+	            android:id="@+id/steps_menu_care"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="15dp"
+	            android:layout_gravity="center"
+	            android:textColor="#696969"
+	            android:textSize="18sp"
+	            android:text="收藏"
+	            android:onClick="StepOnClick"/>
+	    </LinearLayout>
+        
+    </FrameLayout>
+    
+</LinearLayout>

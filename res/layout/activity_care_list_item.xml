@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+	<!-- @drawable/care_delete_list_item_bg -->
+	<com.loopj.android.image.SmartImageView 
+       android:id="@+id/care_image"
+       android:layout_width="100dp"
+       android:layout_marginRight="5dp"
+       android:layout_height="match_parent"
+       android:scaleType="fitXY"
+       android:src="@drawable/classify_gridview_fangshi" />
+        
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_toRightOf="@id/care_image"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:id="@+id/care_menuname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="宫保鸡丁"
+	        android:textColor="#000000"
+	        android:textSize="16sp"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/care_tags"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="年华公安的副教授及电风扇的回复"
+	        android:textSize="12sp" />
+	</LinearLayout>
+    
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,363 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F0F0F0"
+    android:layout_gravity="center" >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cdcdcd" >
+        <!-- 中间内容 -->
+	    <ScrollView 
+	        android:id="@+id/Scrollview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:background="#f0f0f0"
+	        android:scrollbars="none" >
+	     <LinearLayout 
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical">
+	         
+		     <RelativeLayout 
+		        android:id="@+id/rl_pager"
+		        android:layout_width="fill_parent"
+		        android:layout_height="200dp">
+		        <!-- 滑动图片 -->
+		        <android.support.v4.view.ViewPager
+			      android:id="@+id/frag01_viewpager"
+			      android:layout_width="match_parent"
+			      android:layout_height="180dp">
+		    	</android.support.v4.view.ViewPager>
+		    	<!-- <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical"
+			        android:layout_alignParentBottom="true"
+			        android:gravity="center_horizontal"
+			        android:background="#cdcdcd" >
+			        <TextView 
+				        android:id="@+id/NewsTitle"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="我校交换生演讲"
+				        android:paddingBottom="5dp"
+				        android:paddingTop="10dp"
+				        android:textSize="18sp"
+				        android:gravity="center"
+				        android:textColor="#ffffff" /> 
+				    <LinearLayout 
+				        android:id="@+id/dotgroup"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:gravity="center"
+				        android:layout_marginBottom="15dp"
+				        android:orientation="horizontal" > 
+				    </LinearLayout> 
+			    </LinearLayout> -->
+		    	
+		        <LinearLayout 
+		            android:id="@+id/frag01_ll_radiobutton"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerHorizontal="true"
+		            android:layout_marginRight="15dp"
+		            android:orientation="horizontal">
+		            <RadioButton 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="3dp"
+		                android:enabled="false"
+		                android:button="@null"/>
+		             <RadioButton 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="3dp"
+		                android:enabled="false"
+		                android:button="@null"/>
+		        	 <RadioButton 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="3dp"
+		                android:enabled="false"
+		                android:button="@null"/>
+		        	 <RadioButton 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="3dp"
+		                android:enabled="false"
+		                android:button="@null"/>
+		        </LinearLayout>
+		      </RelativeLayout>
+		      
+		    
+		     <!-- 小菜单 -->
+		     <LinearLayout 
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:orientation="horizontal"
+		         android:background="@color/white"
+		         android:layout_marginLeft="3dp"
+	        	 android:layout_marginRight="3dp" >
+		       <RadioGroup 
+		           android:id="@+id/rg_group"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_marginTop="5dp"
+		           android:layout_marginBottom="5dp"
+		           android:orientation="horizontal">
+			         <RadioButton 
+			             android:id="@+id/rb_zhongcan"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_weight="1"
+			             android:drawablePadding="3dp"
+			             android:button="@null"
+			             android:gravity="center"
+			             android:text="中餐"
+			             android:textSize="16sp"
+			             android:textColor="@color/black"
+			             android:drawableTop="@drawable/icon_zhongcan32"/>
+			         <RadioButton 
+			             android:id="@+id/rb_xican"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_weight="1"
+			             android:button="@null"
+			             android:gravity="center"
+			             android:text="西餐"
+			             android:textSize="16sp"
+			             android:textColor="@color/black"
+			             android:drawableTop="@drawable/icon_xican32"/>
+			         <RadioButton 
+			             android:id="@+id/rb_facan"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_weight="1"
+			             android:button="@null"
+			             android:gravity="center"
+			             android:text="法餐"
+			             android:textSize="16sp"
+			             android:textColor="@color/black"
+			             android:drawableTop="@drawable/icon_facan32"/>
+			         <RadioButton 
+			             android:id="@+id/rb_kuaican"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_weight="1"
+			             android:button="@null"
+			             android:gravity="center"
+			             android:text="快餐"
+			             android:textSize="16sp"
+			             android:textColor="@color/black"
+			             android:drawableTop="@drawable/icon_kuaican32"/>
+		         </RadioGroup>
+		     </LinearLayout>
+
+		     <TextView android:layout_width="match_parent" android:layout_height="0.5dp" android:background="#f0f0f0"/>
+		     <!-- 美天头盘 -->
+		     <LinearLayout 
+		         android:layout_width="match_parent"
+		         android:layout_height="48dp"
+		         android:orientation="horizontal"
+		         android:layout_gravity="center_horizontal"
+		         android:layout_marginLeft="3dp"
+	        	 android:layout_marginRight="3dp"
+	        	 android:background="#ffffff">
+		         <TextView 
+		             android:layout_width="45dp"
+		             android:layout_height="wrap_content"
+		             android:text="美天头盘"
+		             android:textSize="14sp"
+		             android:textColor="#CDCDCD"
+		             android:paddingLeft="10dp"
+		             android:layout_gravity="center_vertical"/>
+		         <TextView 
+		             android:layout_width="1dp"
+		             android:layout_height="30dp"
+		             android:background="#F0F0F0"
+		             android:layout_gravity="center_vertical"
+		             android:layout_marginLeft="5dp"
+		             android:layout_marginRight="10dp"/>
+		         <LinearLayout 
+		             android:layout_width="match_parent"
+		             android:layout_height="match_parent"
+		             android:orientation="vertical" 
+		             android:gravity="center_vertical" >
+		             <TextView 
+		                 android:id="@+id/tv_gunggong"
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="寻找冬季养生美食活动评选中"
+		                 android:textColor="#545976"
+		                 android:textSize="14sp"/>
+		             <TextView 
+		                 android:id="@+id/tv_tuijian"
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="菜谱征集"
+		                 android:textColor="#ff0000"
+		                 android:textSize="12sp"/>
+		         </LinearLayout>
+		     </LinearLayout>
+		     
+		     <TextView android:layout_width="match_parent" android:layout_height="0.5dp" android:background="#f0f0f0"/>
+		      <!-- 饮食内涵-->
+		     <LinearLayout 
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:orientation="horizontal"
+		         android:layout_marginLeft="3dp"
+	        	 android:layout_marginRight="3dp"
+	        	 android:background="#ffffff">
+		      	<!-- 标题  -->
+		         <LinearLayout 
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:orientation="horizontal"
+		             android:gravity="center_vertical">
+		             <TextView 
+			             android:layout_width="0dp"
+			             android:layout_height="48sp"
+			             android:layout_weight="1"
+			             android:text="饮食内涵"
+			             android:textColor="#000000"
+			             android:textStyle="bold"
+			             android:gravity="center_vertical"
+			             android:textSize="16sp"
+			             android:layout_marginLeft="5dp"/>
+		             <TextView 
+			             android:layout_width="wrap_content"
+			             android:layout_height="48sp"
+			             android:text="更多"
+			             android:textColor="#696969"
+			             android:textSize="16sp"
+			             android:gravity="center"
+			             android:layout_marginRight="5dp"
+			             android:drawableRight="@drawable/iconfont_top_more"/>
+		   		  </LinearLayout>
+		     </LinearLayout>
+		         
+		     
+		     <!--流行与排行-->
+		     <LinearLayout 
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:orientation="vertical"
+		           android:layout_marginLeft="3dp"
+		      	   android:layout_marginRight="3dp" >
+		           <LinearLayout 
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:orientation="horizontal"
+		               android:layout_gravity="center_horizontal"
+		               android:layout_marginTop="5dp" >
+		               <ImageButton 
+		                   android:id="@+id/img_yinshi01"
+		                   android:layout_width="0dp"
+		                   android:layout_weight="1"
+		                   android:layout_height="wrap_content"
+		                   android:src="@drawable/icon_title01"
+		                   android:background="@null"
+		                   android:layout_marginRight="5dp"/>
+		               <ImageButton 
+		                   android:id="@+id/img_yinshi02"
+		                   android:layout_width="0dp"
+		                   android:layout_weight="1"
+		                   android:layout_height="wrap_content"
+		                   android:src="@drawable/icon_title02"
+		                   android:background="@null"
+		                   android:layout_marginRight="5dp"/>
+		               <ImageButton 
+		                   android:id="@+id/img_yinshi03"
+		                   android:layout_width="0dp"
+		                   android:layout_weight="1"
+		                   android:layout_height="wrap_content"
+		                   android:src="@drawable/icon_title03"
+		                   android:background="@null"/>
+		           </LinearLayout>
+		           <LinearLayout 
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:orientation="horizontal"
+		               android:layout_gravity="center_horizontal"
+		               android:layout_marginTop="5dp"  >
+		               <ImageButton 
+		                   android:id="@+id/img_yinshi04"
+		                   android:layout_width="0dp"
+		                   android:layout_weight="1"
+		                   android:layout_height="wrap_content"
+		                   android:src="@drawable/icon_title04"
+		                   android:background="@null"
+		                   android:layout_marginRight="5dp"/>
+		               <ImageButton 
+		                   android:id="@+id/img_yinshi05"
+		                   android:layout_width="0dp"
+		                   android:layout_weight="1"
+		                   android:layout_height="wrap_content"
+		                   android:src="@drawable/icon_title05"
+		                   android:background="@null"
+		                   android:layout_marginRight="5dp"/>
+		               <ImageButton 
+		                   android:id="@+id/img_yinshi06"
+		                   android:layout_width="0dp"
+		                   android:layout_weight="1"
+		                   android:layout_height="wrap_content"
+		                   android:src="@drawable/icon_title05"
+		                   android:background="@null" />
+		           </LinearLayout>
+		      </LinearLayout>
+		         
+		     
+		     
+		     
+		     
+		     
+		    <!-- 父 -->
+	       </LinearLayout>
+	    </ScrollView>
+        
+	    
+	    
+	    
+        <!-- 顶部 -->
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:orientation="horizontal"
+	        android:gravity="center">
+	        <LinearLayout 
+	            android:id="@+id/ll_search"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal"
+		        android:gravity="center"
+		        android:background="@drawable/radius_top_and_bottom"
+		        android:layout_margin="10dp" 
+		        android:onClick="SearchOnClick">
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/icon_search"
+		            android:layout_marginLeft="10dp" />
+		       	<TextView 
+		            android:id="@+id/main_top_search"
+		            android:layout_width="200dp"
+		            android:layout_height="30dp"
+		            android:hint="搜索菜谱"
+		            android:textSize="16sp"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="6dp"
+		            android:background="@null"/>
+		    </LinearLayout>
+	    </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

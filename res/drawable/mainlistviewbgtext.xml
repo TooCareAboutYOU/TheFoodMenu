@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!--选中 -->
+    <item android:state_checked="true" android:drawable="@drawable/shape_listview_itembgcolor_white" />
+    <item android:state_selected="true" android:drawable="@drawable/shape_listview_itembgcolor_white" />
+    <item android:state_pressed="true"  android:drawable="@drawable/shape_listview_itembgcolor_white" /> />
+    <item android:state_focused="true" android:drawable="@drawable/shape_listview_itembgcolor_white" />
+    <item android:state_focused="false" android:drawable="@drawable/shape_listview_itembgcolor_gray" />
+    
+    
+    <!--未选中等状态 -->
+    <!-- <item android:drawable="@drawable/listviewitembgcolor_gray"  />  -->
+</selector>
